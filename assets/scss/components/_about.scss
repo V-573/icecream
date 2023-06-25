@@ -1,0 +1,240 @@
+@import "../utils/variables";
+
+.section--about{
+    background-color: $background;
+    background-image: url("../images/milk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div__about-up{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.p--tittle{
+    padding-bottom: 16px;
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    color: $accent-color;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    vertical-align: top;
+    line-height: 1.145;
+}
+.h2--tittle{
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    vertical-align: top;
+    line-height: 1.145;
+    color: $title-text-color;
+}
+.p--tittle:hover,
+.h2--tittle:hover{
+    animation: animacion-letter-spacing 1.5s forwards;
+}
+@keyframes animacion-letter-spacing {
+  0% {
+    letter-spacing: normal;
+  }
+  5%{
+    letter-spacing: 0.5em;    
+  }
+  10%{
+      letter-spacing: 0.47em;
+  }
+  15%{
+      letter-spacing: 0.45em;
+  }
+  20%{
+      letter-spacing: 0.42;
+  }
+  25%{
+      letter-spacing: 0.4em;
+  }
+  30%{
+      letter-spacing: 0.37em;
+  }
+  35%{
+      letter-spacing: 0.35em;
+  }
+  40%{
+      letter-spacing: 0.32em;
+  }
+  45%{
+      letter-spacing: 0.3em;
+  }
+  50% {
+      letter-spacing: 0.27em;
+  }
+  55%{
+      letter-spacing: 0.25em;
+  }
+  60%{
+      letter-spacing: 0.22em;
+  }
+  65%{
+      letter-spacing: 0.2em;
+    }
+70%{
+    letter-spacing: 0.17em;
+}
+75%{
+    letter-spacing: 0.15em;
+    }
+80%{
+    letter-spacing: 0.12em;
+    }
+85%{
+    letter-spacing: 0.1em;
+    }
+90%{
+    letter-spacing: 0.07em;
+    }
+95%{
+    letter-spacing: 0.05em;
+  }
+
+  100% {
+    letter-spacing: normal;
+  }
+}
+.img{
+    padding-right: 99px;
+}
+.img:hover{
+    animation: rotateOnce 5s forwards;
+}
+@keyframes rotateOnce {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.div__about-down{
+    display: flex;
+}
+.div__p--principal{
+    color: $primary-text-color;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.76;
+    width: 400px;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.div__p--secondary{
+    color: $second-text;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.94;
+    width: 400px;
+    padding-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+.div__p--principal:hover,
+.div__p--secondary:hover{
+    transform: scale(1.2);
+}
+.button--about{
+    color: $title-text-color;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.301875;
+    text-align: center;
+    width: 176px;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    background-color: $primary-white-color;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.button--about:hover{
+    background-color: $hover-button;
+    transform: scale(1.2);
+}
+.button--about:focus{
+    background-color: $hover-button;
+}
+.div--text{
+    padding-top: 90px;
+}
+
+@media screen and (min-width:50px) and (max-width:767px){
+    .div__about-down{
+        flex-wrap: wrap;
+        max-width: 320px;
+    }
+    .img{
+        width: 280px;
+        height: 279px;
+        padding-right: 0;
+    }
+    .div__p--principal,
+    .div__p--secondary{
+        height: 111px;
+        padding: 0;
+        width: 220px;
+        font-size: 12px;
+        line-height: 1.62;
+    }
+    .div--text{
+        padding-top: 40px;
+        width: 220px;
+    }
+    .div__p--principal{
+        margin-bottom: 18px;
+    }
+    .button--about{
+        font-size: 14px;
+        line-height: 1.302142857142857;
+        margin-top: 80px;
+    }
+    .p--tittle{
+        font-size: 18px;
+        line-height: 1.145;
+    }
+    .h2--tittle{
+    font-size: 34px;
+    line-height: 1.145;
+    }
+    .section--about{
+        background-image: none;
+        background-image: url("../images/milkx2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 90% 80%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .img{
+        width: 336px;
+        height: 335px;
+        padding-right: 0;
+        margin-right: 32px;
+    }
+    .div__p--principal,
+    .div__p--secondary{
+        font-size: 14px;
+        line-height: 1.74;
+        width: 334px;
+    }
+    .div--text{
+        padding-top: 0;
+    }
+    .section--about{
+        background-image: none;
+    }
+}

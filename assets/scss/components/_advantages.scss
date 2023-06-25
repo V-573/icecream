@@ -1,0 +1,97 @@
+@import "../utils/variables";
+
+.section--advantages{
+    background-color: $background;
+    padding-top: 40px;
+    padding-bottom: 182px;
+}
+.ul__section-advantages{
+    display: flex;
+    gap: 115px;
+}
+.p--number-advantages{
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.04em;
+    line-height: 1.145;
+    color: $title-text-color;
+    padding-bottom: 16px;
+}
+.p--advantages{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.76;
+    color: $primary-text-color;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    fill: $accent-color;
+}
+.ul__section-advantages:hover .icon{
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.div__advantages--svg{
+    padding-bottom: 40px;
+}
+.ul__section-advantages:hover .li--advantages{
+    animation: rotate 2s linear;
+}
+.li--advantages{
+    display: inline-block;
+    transition: transform 0.3s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (min-width:50px) and (max-width:767px){
+    .ul__section-advantages{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    .div__advantages--svg{
+        padding-bottom: 16px;
+    }
+    .p--advantages{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    .section--advantages{
+        padding-bottom: 66px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .ul__section-advantages{
+        gap: 22px;
+    }
+    .li--advantages{
+        width: 165px;
+    }
+    .p--advantages{
+        font-size: 14px;
+        line-height: 1.74;
+    }
+    .exception{
+        width: 196px;
+    }
+}

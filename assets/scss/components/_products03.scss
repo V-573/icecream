@@ -1,0 +1,87 @@
+img {
+  display: block;
+}
+.body {
+  font-family: Titan One;
+}
+.product {
+  &__quality {
+    font-family: "Titan One", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $accent-color;
+    size: 30px;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-family: "Titan One", cursive;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-text-color;
+    margin-bottom: 281px;
+  }
+  &__variety {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 368px;
+    background-color: $product-card-pink;
+    border-radius: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 60px;
+    padding-top: 165px;
+  }
+  &__card--orange {
+    background-color: $contact-orange-bg;
+  }
+  &__card--green {
+    background-color: $contact-green-bg;
+  }
+  &__img {
+    position: absolute;
+    top: -45%;
+  }
+  &__subtitle {
+    font-family: "Titan One", cursive;
+    font-style: normal;
+    line-height: 34px;
+    text-align: center;
+    padding: 32px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+  &__content {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $primary-white-color;
+  }
+  &__animation {
+    transition: transform 250ms ease;
+  }
+  &__animation:hover,
+  &__animation:focus {
+    transform: rotate(-90deg);
+  }
+}

@@ -1,0 +1,158 @@
+img {
+  display: block;
+}
+.body {
+  font-family: Titan One;
+}
+.product {
+  margin-bottom: 60px;
+  &__quality {
+    font-family: "Titan One", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $accent-color;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-family: "Titan One", cursive;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-text-color;
+    margin-bottom: 281px;
+  }
+  &__variety {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 368px;
+    background-color: $product-card-pink;
+    border-radius: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 60px;
+    padding-top: 165px;
+  }
+  &__card--orange {
+    background-color: $contact-orange-bg;
+  }
+  &__card--green {
+    background-color: $contact-green-bg;
+  }
+  &__img {
+    position: absolute;
+    top: -45%;
+  }
+  &__subtitle {
+    font-family: "Titan One", cursive;
+    font-style: normal;
+    line-height: 1.13;
+    text-align: center;
+    padding: 32px;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+  &__content {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $primary-white-color;
+  }
+  &__animation {
+    transition: transform 250ms ease;
+  }
+  &__animation:hover,
+  &__animation:focus {
+    transform: rotate(-90deg);
+  }
+}
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .product {
+    &__quality {
+      font-size: 18px;
+      text-align: center;
+    }
+    &__title {
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 140px;
+    }
+    &__variety {
+      flex-direction: column;
+      gap: 140px;
+    }
+    &__card {
+      width: 280px;
+      padding-top: 160px;
+      padding-bottom: 40px;
+    }
+    &__img {
+      position: absolute;
+      top: -24%;
+      width: 280px;
+      height: 280px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__content {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product {
+    &__quality {
+      font-size: 26px;
+      text-align: center;
+    }
+    &__title {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 158px;
+    }
+    &__variety {
+      gap: 16px;
+    }
+    &__card {
+      width: 224px;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 118px;
+      padding-bottom: 40px;
+    }
+    &__img {
+      position: absolute;
+      top: -24%;
+      width: 224px;
+      height: 224px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__content {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+  }
+}
